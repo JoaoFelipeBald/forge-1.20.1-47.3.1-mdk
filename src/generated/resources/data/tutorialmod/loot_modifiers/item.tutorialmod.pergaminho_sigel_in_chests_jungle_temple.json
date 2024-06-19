@@ -1,0 +1,14 @@
+{
+  "type": "tutorialmod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    },
+    {
+      "chance": 0.33333334,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "tutorialmod:pergaminho_sigel"
+}

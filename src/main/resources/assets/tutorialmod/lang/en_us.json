@@ -1,0 +1,130 @@
+{
+  "item.tutorialmod.sapphire": "Sapphire",
+  "item.tutorialmod.raw_sapphire": "Raw Sapphire",
+  "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.strawberry": "Strawberry",
+  "item.tutorialmod.pine_cone": "Pine Cone",
+  "item.tutorialmod.sapphire_staff": "Sapphire Staff",
+
+  "item.tutorialmod.sapphire_axe": "Sapphire Axe",
+  "item.tutorialmod.sapphire_sword": "Sapphire Sword",
+  "item.tutorialmod.sapphire_hoe": "Sapphire Hoe",
+  "item.tutorialmod.sapphire_shovel": "Sapphire Shovel",
+  "item.tutorialmod.sapphire_pickaxe": "Sapphire Pickaxe",
+
+  "item.tutorialmod.dinheiro_sigel": "Dinheiro Sigel",
+  "item.tutorialmod.pote_sigel": "Pote Sigel",
+  "item.tutorialmod.amuleto_sigel": "Amuleto Solar",
+  "item.tutorialmod.calice_sigel": "Cálice Dourado",
+  "item.tutorialmod.pergaminho_sigel": "Pergaminho Sigel",
+  "item.tutorialmod.mapa_sigel": "Mapa dos Sigel",
+
+  "item.tutorialmod.healer_staff1": "Cajado do Aprendiz",
+  "item.tutorialmod.healer_staff2": "Cajado do Patriarca",
+  "item.tutorialmod.healer_staff3": "Cajado do Sumo Sacerdote",
+  "item.tutorialmod.healer_staff4": "Cajado do Cardeal",
+  "item.tutorialmod.healer_staff5": "Cajado Primaz (inativo)",
+  "item.tutorialmod.healer_staff6": "Cajado Primaz",
+
+  "item.tutorialmod.fragmento_sigel": "Fragmento de Armadura Sigel",
+  "item.tutorialmod.upgrade_sigel": "Cristal Sigel",
+  "item.tutorialmod.elmo_mineiro": "Elmo do Minerador",
+
+  "item.tutorialmod.sigel1_helmet": "Elmo do Mensageiro Sigel (Deteriorado)",
+  "item.tutorialmod.sigel2_helmet": "Elmo do Mensageiro Sigel (Desgastado)",
+  "item.tutorialmod.sigel3_helmet": "Elmo do Mensageiro Sigel (Rejuvenescido)",
+  "item.tutorialmod.sigel4_helmet": "Elmo do Mensageiro Sigel (Restaurado)",
+
+  "item.tutorialmod.sigel1_chestplate": "Couraça do Mensageiro Sigel (Deteriorado)",
+  "item.tutorialmod.sigel2_chestplate": "Couraça do Mensageiro Sigel (Desgastado)",
+  "item.tutorialmod.sigel3_chestplate": "Couraça do Mensageiro Sigel (Rejuvenescido)",
+  "item.tutorialmod.sigel4_chestplate": "Couraça do Mensageiro Sigel (Restaurado)",
+
+  "item.tutorialmod.sigel1_leggings": "Greva do Mensageiro Sigel (Deteriorado)",
+  "item.tutorialmod.sigel2_leggings": "Greva do Mensageiro Sigel (Desgastado)",
+  "item.tutorialmod.sigel3_leggings": "Greva do Mensageiro Sigel (Rejuvenescido)",
+  "item.tutorialmod.sigel4_leggings": "Greva do Mensageiro Sigel (Restaurado)",
+
+  "item.tutorialmod.sigel1_boots": "Botas do Mensageiro Sigel (Deteriorado)",
+  "item.tutorialmod.sigel2_boots": "Botas do Mensageiro Sigel (Desgastado)",
+  "item.tutorialmod.sigel3_boots": "Botas do Mensageiro Sigel (Rejuvenescido)",
+  "item.tutorialmod.sigel4_boots": "Botas do Mensageiro Sigel (Restaurado)",
+
+  "item.tutorialmod.dinheiro_mani": "Dinheiro Mani",
+  "item.tutorialmod.amuleto_mani": "Amuleto Lunar",
+  "item.tutorialmod.relogio_mani": "Relógio Mani",
+  "item.tutorialmod.lanterna_mani": "Lanterna Mani",
+  "item.tutorialmod.jornal_mani": "Jornal Mani",
+  "item.tutorialmod.faca_mani": "Faca Cerimonial Mani",
+
+  "item.tutorialmod.sapphire_helmet": "Sapphire Helmet",
+  "item.tutorialmod.sapphire_chestplate": "Sapphire Chestplate",
+  "item.tutorialmod.sapphire_leggings": "Sapphire Leggings",
+  "item.tutorialmod.sapphire_boots": "Sapphire boots",
+
+  "item.tutorialmod.dinami": "Dinami",
+  "item.tutorialmod.dinamita": "Dinamita",
+  "item.tutorialmod.estelaris": "Estelaris",
+  "item.tutorialmod.miracula": "Miracula",
+  "item.tutorialmod.corviva": "Corviva",
+  "item.tutorialmod.accel": "Accel",
+
+  "item.tutorialmod.acell_seeds": "Sementes de Accel",
+  "item.tutorialmod.dinami_seeds": "Sementes de Dinami",
+  "item.tutorialmod.estelaris_seeds": "Sementes de Estelaris",
+  "item.tutorialmod.miracula_seeds": "Sementes de Miracula",
+  "item.tutorialmod.corviva_seeds": "Sementes de corviva",
+
+
+  "block.tutorialmod.catmint": "Catmint",
+
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "block.tutorialmod.sapphire_block": "Block of Sapphire",
+  "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.tutorialmod.sapphire_ore": "Sapphire Ore",
+  "block.tutorialmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.tutorialmod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.tutorialmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+  "block.tutorialmod.sound_block": "Sound Block",
+
+  "block.tutorialmod.sapphire_stairs": "Sapphire Stairs",
+  "block.tutorialmod.sapphire_slab": "Sapphire Slab",
+  "block.tutorialmod.sapphire_button": "Sapphire Button",
+  "block.tutorialmod.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.tutorialmod.sapphire_fence": "Sapphire Fence",
+  "block.tutorialmod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.tutorialmod.sapphire_wall": "Sapphire Wall",
+  "block.tutorialmod.sapphire_door": "Sapphire Door",
+  "block.tutorialmod.sapphire_trapdoor": "Sapphire Trapdoor",
+
+
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables undergound!",
+  "tooltip.tutorialmod.sound_block.tooltip": "Sound",
+
+  "entity.minecraft.villager.tutorialmod.sigelferreiromaster": "Sound Master",
+  "entity.minecraft.villager.tutorialmod.sigelcolecionadormaster": "Scary Master",
+  "entity.minecraft.villager.tutorialmod.sigelarmeiromaster": "Good Master",
+  "entity.minecraft.villager.tutorialmod.sigelprincipal": "Good Master",
+
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
+  "effect.tutorialmod.freeze": "Freeze",
+  "effect.tutorialmod.cooldown": "Cooldown",
+  "enchantment.tutorialmod.fall_protectio2": "Peso Pena",
+  "enchantment.tutorialmod.freeze": "Congelamento",
+  "enchantment.tutorialmod.fire_protectio2": "Proteção do Fogo",
+  "enchantment.tutorialmod.night_vision_enchantment": "Visão Mani",
+  "enchantment.tutorialmod.poison_enchantment": "Víbora Escarlate",
+  "enchantment.tutorialmod.reaper_enchantment": "Julgamento",
+  "enchantment.tutorialmod.sacred_enchantment": "Chama de Mithra",
+  "enchantment.tutorialmod.projectile_protection_2": "Proteção de projéteis",
+  "enchantment.tutorialmod.silent_enchantment": "Caçador Noturno",
+
+  "item.tutorialmod.fragmento_sigel.tooltip": "Resquícios da armadura de um Sigel.\nMuitos desaparecidos e poucos mortos, a \nprofissão do mensageiro era\n tão venerada quanto arriscada",
+
+  "item.tutorialmod.sigel1_helmet.tooltip": "Resquícios da armadura de um Sigel.\nMuitos desaparecidos e poucos mortos, a \nprofissão do mensageiro era\n tão venerada quanto arriscada",
+
+  "enchantment.tutorialmod.cooldown": "Proteção de Gaia"
+}

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "tutorialmod:sound_poi",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:sigelcolecionadorpoi",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:sigelferreiropoi",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:sigelarmeiropoi",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:sigelprincipalpoi",
+      "required": false
+    }
+  ]
+}
