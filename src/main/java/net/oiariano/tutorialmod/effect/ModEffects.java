@@ -17,6 +17,8 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> COOLDOWN = MOB_EFFECTS.register("cooldown",
             () -> new CooldownEffect(MobEffectCategory.BENEFICIAL, 3124687));
+    public static final RegistryObject<MobEffect> BENCAO_HELIOS = MOB_EFFECTS.register("bencao_helios",
+            () -> new CooldownEffect(MobEffectCategory.BENEFICIAL, 3124687));
 
     public static final RegistryObject<MobEffect> POWEREFFECT = MOB_EFFECTS.register("desativado",
             () -> new PowerEffect(MobEffectCategory.BENEFICIAL, 3124687));
