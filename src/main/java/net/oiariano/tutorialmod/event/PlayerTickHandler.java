@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.oiariano.tutorialmod.effect.ModEffects;
 import net.oiariano.tutorialmod.enchantments.ModEnchantments;
 import net.oiariano.tutorialmod.item.ModItems;
 
@@ -38,18 +39,20 @@ public class PlayerTickHandler {
                     player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1, false, false, false));
                 }
                 else{player.removeEffect(MobEffects.NIGHT_VISION);}
-//                int nivelSigel=verificarArmadura(player);
-//                if(!player.getPersistentData().contains("velocidade")){
-//                    player.getPersistentData().putInt("velocidade",0);
-//                }
-//                int velocidadeAtual= player.getPersistentData().getInt("velocidade");
-//                if(velocidadeAtual<0){velocidadeAtual=0;}
-//                if(velocidadeAtual>(nivelSigel+1)*3){velocidadeAtual=(nivelSigel+1)*3;}
-//                player.getPersistentData().putInt("velocidade",velocidadeAtual);
-//                player.sendSystemMessage(Component.literal("A"+String.valueOf(velocidadeAtual)));
-//                if(nivelSigel!=0){
-//                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,100, velocidadeAtual));
-//                }
+
+
+            }
+            int nivelSigel=verificarArmadura(player);
+//            if(!player.getPersistentData().contains("velocidade")){
+//                player.getPersistentData().putInt("velocidade",0);
+//            }
+//            int velocidadeAtual= player.getPersistentData().getInt("velocidade");
+//            if(velocidadeAtual<0){velocidadeAtual=0;}
+//            if(velocidadeAtual>nivelSigel){velocidadeAtual=nivelSigel;}
+//            player.getPersistentData().putInt("velocidade",velocidadeAtual);
+//            player.sendSystemMessage(Component.literal("A"+String.valueOf(velocidadeAtual)));
+            if(nivelSigel==0){
+                player.removeEffect(ModEffects.BENCAO_HELIOS.get());
             }
         }
         if (!world.isClientSide()) {

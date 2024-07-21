@@ -2,6 +2,7 @@ package net.oiariano.tutorialmod.item.custom;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -32,7 +33,7 @@ public class ModArmorItem extends ArmorItem {
                             new MobEffectInstance(MobEffects.WATER_BREATHING, 2000, 1, false, false, false)
                     ))
                     .put(ModArmorMaterials.SIGEL1, ImmutableList.of(
-                            new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false, false)
+                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
                     ))
                     .put(ModArmorMaterials.SIGEL2, ImmutableList.of(
                             new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
@@ -93,8 +94,21 @@ public class ModArmorItem extends ArmorItem {
 //            if(speed<0){speed=0;}
 ////            if(speed>this.max){speed=this.max;}
 //
+         //   player.sendSystemMessage(Component.literal("d "+player.hasEffect(ModEffects.BENCAO_HELIOS.get())));
+            int level=0;
+            MobEffectInstance effectInstance = Minecraft.getInstance().player.getEffect(ModEffects.BENCAO_HELIOS.get());
+            if (effectInstance != null) {
+                level = effectInstance.getAmplifier();
+            } else {
+            }
+            player.sendSystemMessage(Component.literal("nivel " + level));
+            if(!player.hasEffect(MobEffects.MOVEMENT_SPEED)&&level>0){
+                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10,level));
+            }
             if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.SIGEL1_HELMET.get()) {
                 player.fallDistance = 0.0F;
+//                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, 8, false, false, false));
+
 //                try {
 //                    if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
 //                        int velocidade = Minecraft.getInstance().player.getPersistentData().getInt("velocidade");
@@ -119,6 +133,7 @@ public class ModArmorItem extends ArmorItem {
                     if (player.getDeltaMovement().y < 0) {
                         player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     }
+//                    player.addEffect(new MobEffectInstance(MobEffects.WITHER, 300, 3));
                     player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     player.setOnGround(true);
                     player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, 8, false, false, false));
@@ -224,6 +239,7 @@ public class ModArmorItem extends ArmorItem {
                 }
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);
+//                    addEffect(player);
                 }
 //                try {
 //                    addEffect(player, speed);
@@ -247,25 +263,16 @@ public class ModArmorItem extends ArmorItem {
         }
     }
 
-//    private void addEffect(Player player, int speed){
-//        int speed2=0;
-//        try{speed2=speed;}
-//        finally {
-//        }
-//        if(speed2<0){speed2=0;}
-//        if(speed2>this.max){
-//            speed2=this.max;}
-//        try {
-//            Minecraft.getInstance().player.getPersistentData().putInt("speed_current", speed2);
-//            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10 - 1, speed2, false, false));
-//        }
-//        catch (NullPointerException e){
-//            Minecraft.getInstance().player.getPersistentData().putInt("speed_current", speed2);
-//        }
-//        finally {
-//
-//        }
-//    }
+    private void addEffect(Player player){
+        if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
+            Player p1 = Minecraft.getInstance().player;
+            if (p1.hasEffect(ModEffects.BENCAO_HELIOS.get())&&!p1.hasEffect(MobEffects.WITHER)) {
+                p1.addEffect(new MobEffectInstance(MobEffects.WITHER, 300, 10));
+//                p1.sendSystemMessage(Component.literal("a"));
+            }
+//        p1.sendSystemMessage(Component.literal(String.valueOf(player.hasEffect(MobEffects.MOVEMENT_SPEED))));
+        }
+    }
 
     private void addStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial, MobEffectInstance mapStatusEffect) {
         boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());

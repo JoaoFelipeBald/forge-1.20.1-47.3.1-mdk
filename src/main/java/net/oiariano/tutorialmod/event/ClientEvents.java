@@ -4,7 +4,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +13,7 @@ import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.oiariano.tutorialmod.TutorialMod;
+import net.oiariano.tutorialmod.effect.ModEffects;
 import net.oiariano.tutorialmod.item.ModItems;
 import net.oiariano.tutorialmod.util.KeyBinding;
 
@@ -60,50 +60,77 @@ public class ClientEvents {
             }
             if(KeyBinding.CHANGE_MINUS_KEY.consumeClick()) {
                 if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
+                    Player player = Minecraft.getInstance().player;
+                    if(player.hasEffect(ModEffects.BENCAO_HELIOS.get())){
+                        player.removeEffect(ModEffects.BENCAO_HELIOS.get());
+                    }
                     CompoundTag playerData = Minecraft.getInstance().player.getPersistentData();
-                    if(!playerData.contains("velocidade")){
-                        playerData.putInt("velocidade", 1);
+                    int nivelSigel = verificarArmadura(player);
+                    if (!playerData.contains("velocidade")) {
+                        playerData.putInt("velocidade", 0);
                     }
                     if (!playerData.contains("velocidade", CompoundTag.TAG_INT)) {
-                        playerData.putInt("velocidade", 1);
+                        playerData.putInt("velocidade", 0);
                     }
-                    int speed = playerData.getInt("velocidade")-1;
-                    playerData.putInt("velocidade",speed);
+                    int speed = playerData.getInt("velocidade") - 1;
+                    playerData.putInt("velocidade", speed);
+                    int velocidadeAtual= player.getPersistentData().getInt("velocidade");
+                    if(velocidadeAtual<0){velocidadeAtual=0;}
+                    if(velocidadeAtual>(nivelSigel+1)*5){velocidadeAtual=(nivelSigel+1)*5;}
+                    player.getPersistentData().putInt("velocidade",velocidadeAtual);
+                    player.sendSystemMessage(Component.literal("A"+String.valueOf(velocidadeAtual)));
+                    player.addEffect(new MobEffectInstance(ModEffects.BENCAO_HELIOS.get(),999999,velocidadeAtual));
                 }
 
             }
             if(KeyBinding.CHANGE_PLUS_KEY.consumeClick()) {
                 if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
+                    Player player = Minecraft.getInstance().player;
+                    if(player.hasEffect(ModEffects.BENCAO_HELIOS.get())){
+                        player.removeEffect(ModEffects.BENCAO_HELIOS.get());
+                    }
                     CompoundTag playerData = Minecraft.getInstance().player.getPersistentData();
+                    int nivelSigel = verificarArmadura(player);
                     if (!playerData.contains("velocidade")) {
-                        playerData.putInt("velocidade", 1);
+                        playerData.putInt("velocidade", 0);
                     }
                     if (!playerData.contains("velocidade", CompoundTag.TAG_INT)) {
-                        playerData.putInt("velocidade", 1);
+                        playerData.putInt("velocidade", 0);
                     }
                     int speed = playerData.getInt("velocidade") + 1;
                     playerData.putInt("velocidade", speed);
-                    Player player = Minecraft.getInstance().player;
-                    int nivelSigel=verificarArmadura(player);
-                    if (!player.getPersistentData().contains("velocidade")) {
-                        player.getPersistentData().putInt("velocidade", 0);
-                    }
-                    int velocidadeAtual = player.getPersistentData().getInt("velocidade");
-                    if (velocidadeAtual < 0) {
-                        velocidadeAtual = 0;
-                    }
-                    if (velocidadeAtual > (nivelSigel + 1) * 3) {
-                        velocidadeAtual = (nivelSigel + 1) * 3;
-                    }
-                    player.getPersistentData().putInt("velocidade", velocidadeAtual);
-                    player.sendSystemMessage(Component.literal("A" + String.valueOf(velocidadeAtual)));
-                    if (nivelSigel != 0 && !player.hasEffect(MobEffects.MOVEMENT_SPEED)) {
-                        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, velocidadeAtual));
-                    }
+                    int velocidadeAtual= player.getPersistentData().getInt("velocidade");
+                    if(velocidadeAtual<0){velocidadeAtual=0;}
+                    if(velocidadeAtual>(nivelSigel+1)*5){velocidadeAtual=(nivelSigel+1)*5;}
+                    player.getPersistentData().putInt("velocidade",velocidadeAtual);
+                    player.sendSystemMessage(Component.literal("A"+String.valueOf(velocidadeAtual)));
+                    player.addEffect(new MobEffectInstance(ModEffects.BENCAO_HELIOS.get(),999999,(velocidadeAtual)));
+ //                   if (Minecraft.getInstance().player.level().isClientSide()) {
+
+
+
+//                        if (!player.getPersistentData().contains("velocidade")) {
+//                            player.getPersistentData().putInt("velocidade", 0);
+//                        }
+//                        int velocidadeAtual = player.getPersistentData().getInt("velocidade");
+//                        if (velocidadeAtual < 0) {
+//                            velocidadeAtual = 0;
+//                        }
+//                        if (velocidadeAtual > (nivelSigel + 1) * 3) {
+//                            velocidadeAtual = (nivelSigel + 1) * 3;
+//                        }
+//                        player.getPersistentData().putInt("velocidade", velocidadeAtual);
+//                        player.sendSystemMessage(Component.literal("A" + String.valueOf(velocidadeAtual)));
+//                        player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 500, velocidadeAtual,false,false,false));
+//
+//                        if (nivelSigel != 0) {
+//                                                    }
 //                if(!Minecraft.getInstance().player.hasEffect(MobEffects.MOVEMENT_SPEED)){
 //                    Minecraft.getInstance().player.removeEffect(MobEffects.MOVEMENT_SPEED);
 //                }
-                }
+                    }
+//                    Minecraft.getInstance().player.sendSystemMessage(Component.literal("Speed effect applied: " + Minecraft.getInstance().player.hasEffect(MobEffects.MOVEMENT_SPEED)));
+//                }
             }
         }
     }
