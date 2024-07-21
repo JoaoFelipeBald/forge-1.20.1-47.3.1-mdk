@@ -1,0 +1,83 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mercy_staff",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "cima",
+					"pivot": [0.5, 30, -0.5],
+					"cubes": [
+						{
+							"origin": [-1, 21, -1],
+							"size": [1, 9, 1],
+							"pivot": [0, 30, -1],
+							"rotation": [0, 0, 30],
+							"uv": {
+								"north": {"uv": [10, 0], "uv_size": [1, 9]},
+								"east": {"uv": [10, 9], "uv_size": [1, 9]},
+								"south": {"uv": [11, 0], "uv_size": [1, 9]},
+								"west": {"uv": [11, 9], "uv_size": [1, 9]},
+								"up": {"uv": [12, 8], "uv_size": [1, 1]},
+								"down": {"uv": [12, 10], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-0.75, 21, 0],
+							"size": [1, 9, 1],
+							"pivot": [0.25, 30, 0],
+							"rotation": [139.10661, 48.59038, 130.89339],
+							"uv": {
+								"north": {"uv": [10, 0], "uv_size": [1, 9]},
+								"east": {"uv": [10, 9], "uv_size": [1, 9]},
+								"south": {"uv": [11, 0], "uv_size": [1, 9]},
+								"west": {"uv": [11, 9], "uv_size": [1, 9]},
+								"up": {"uv": [12, 8], "uv_size": [1, 1]},
+								"down": {"uv": [12, 10], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [0, 21, -0.5],
+							"size": [1, 9, 1],
+							"pivot": [1, 30, -0.5],
+							"rotation": [-141.34816, -50.19019, 133.8455],
+							"uv": {
+								"north": {"uv": [10, 0], "uv_size": [1, 9]},
+								"east": {"uv": [10, 9], "uv_size": [1, 9]},
+								"south": {"uv": [11, 0], "uv_size": [1, 9]},
+								"west": {"uv": [11, 9], "uv_size": [1, 9]},
+								"up": {"uv": [12, 8], "uv_size": [1, 1]},
+								"down": {"uv": [12, 10], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [0, 0, -1],
+							"size": [1, 32, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [1, 32]},
+								"east": {"uv": [1, 0], "uv_size": [1, 32]},
+								"south": {"uv": [2, 0], "uv_size": [1, 32]},
+								"west": {"uv": [3, 0], "uv_size": [1, 32]},
+								"up": {"uv": [12, 0], "uv_size": [1, 1]},
+								"down": {"uv": [12, 2], "uv_size": [1, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

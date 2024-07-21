@@ -200,6 +200,8 @@ public class ModItems {
     public static final RegistryObject<Item> HEALER_STAFF6 = ITEMS.register("healer_staff6",
             () -> new HealerStaff(new Item.Properties().durability(100),6));
 
+    public static final RegistryObject<Item> MERCY_STAFF = ITEMS.register("mercy_staff",
+            () -> new MercyStaff(new Item.Properties()));
 
     public static final RegistryObject<Item> ACCEL= ITEMS.register("accel",
             () -> new Item(new Item.Properties().food(ModFoods.ACCEL)){
