@@ -101,7 +101,7 @@ public class ModArmorItem extends ArmorItem {
                 level = effectInstance.getAmplifier();
             } else {
             }
-            player.sendSystemMessage(Component.literal("nivel " + level));
+//            player.sendSystemMessage(Component.literal("nivel " + level));
             if(!player.hasEffect(MobEffects.MOVEMENT_SPEED)&&level>0){
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10,level));
             }
