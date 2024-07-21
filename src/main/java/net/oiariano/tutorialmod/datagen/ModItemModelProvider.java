@@ -55,6 +55,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DINAMITA);
         simpleItem(ModItems.CORVIVA);
         simpleItem(ModItems.DINAMI);
+        simpleItem(ModItems.PIRARUCU);
+        simpleItem(ModItems.ENERGY);
+        simpleItem(ModItems.PAMONHA);
+        simpleItem(ModItems.DINHEIRO_PEIXE);
+
+        simpleItem(ModItems.RALUQUEI_MUSIC_DISC);
+        simpleItem(ModItems.SKIBIDI_MUSIC_DISC);
+        simpleItem(ModItems.TRACER_MUSIC_DISC);
+        simpleItem(ModItems.MERCY_MUSIC_DISC);
 
         simpleItem(ModItems.PERGAMINHO_SIGEL);
         simpleItem(ModItems.MAPA_SIGEL);
@@ -68,6 +77,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LANTERNA_MANI);
         simpleItem(ModItems.AMULETO_MANI);
         simpleItem(ModItems.DINHEIRO_MANI);
+
+        simpleItem(ModItems.CUSTOM_ENCHANTED_BOOK);
+        simpleItem(ModItems.CUSTOM_ENCHANTED_BOOK2);
 
         simpleItem(ModItems.SUPRIMENTO_DO_FERREIRO);
 
@@ -113,6 +125,54 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
 
+        simpleItem(ModItems.PRACA_MUSIC_DISC);
+        simpleItem(ModItems.EVIDENCIAS_MUSIC_DISC);
+        simpleItem(ModItems.RECOMECAR_MUSIC_DISC);
+        simpleItem(ModItems.LEMBRAR_MUSIC_DISC);
+        simpleItem(ModItems.ESTRANHA_MUSIC_DISC);
+        simpleItem(ModItems.COMIGO_MUSIC_DISC);
+        simpleItem(ModItems.VAGALUMES_MUSIC_DISC);
+        simpleItem(ModItems.ELA_MUSIC_DISC);
+        simpleItem(ModItems.BORBOLETAS_MUSIC_DISC);
+        simpleItem(ModItems.GARRAFA_MUSIC_DISC);
+        simpleItem(ModItems.DUROU_MUSIC_DISC);
+        simpleItem(ModItems.DELA_MUSIC_DISC);
+        simpleItem(ModItems.BOA_MUSIC_DISC);
+        simpleItem(ModItems.GRACA_MUSIC_DISC);
+        simpleItem(ModItems.ERRADA_MUSIC_DISC);
+        simpleItem(ModItems.NEGAO_MUSIC_DISC);
+        simpleItem(ModItems.SAUDADE_MUSIC_DISC);
+        simpleItem(ModItems.BARATA_MUSIC_DISC);
+        simpleItem(ModItems.PESCADOR_MUSIC_DISC);
+        simpleItem(ModItems.BEN10_MUSIC_DISC);
+
+        simpleItem(ModItems.MIM_MUSIC_DISC);
+        simpleItem(ModItems.LIGACAO_MUSIC_DISC);
+        simpleItem(ModItems.FRENTE_MUSIC_DISC);
+        simpleItem(ModItems.NORMAL_MUSIC_DISC);
+        simpleItem(ModItems.REZO_MUSIC_DISC);
+        simpleItem(ModItems.ESTIVER_MUSIC_DISC);
+        simpleItem(ModItems.TARDE_MUSIC_DISC);
+        simpleItem(ModItems.EMOCOES_MUSIC_DISC);
+        simpleItem(ModItems.ABRIU_MUSIC_DISC);
+        simpleItem(ModItems.NIGHTMARE_MUSIC_DISC);
+        simpleItem(ModItems.AFTERLIFE_MUSIC_DISC);
+        simpleItem(ModItems.GOD_MUSIC_DISC);
+        simpleItem(ModItems.HEAVEN_MUSIC_DISC);
+        simpleItem(ModItems.AWAY_MUSIC_DISC);
+        simpleItem(ModItems.SPACE_MUSIC_DISC);
+        simpleItem(ModItems.ROAR_MUSIC_DISC);
+        simpleItem(ModItems.HORSE_MUSIC_DISC);
+        simpleItem(ModItems.CHANDELIER_MUSIC_DISC);
+        simpleItem(ModItems.YEARS_MUSIC_DISC);
+        simpleItem(ModItems.BASS_MUSIC_DISC);
+        simpleItem(ModItems.MAYBE_MUSIC_DISC);
+        simpleItem(ModItems.BLOOD_MUSIC_DISC);
+        simpleItem(ModItems.CYCLONE_MUSIC_DISC);
+        simpleItem(ModItems.LOVE_MUSIC_DISC);
+        simpleItem(ModItems.FLY_MUSIC_DISC);
+        simpleItem(ModItems.GIRL_MUSIC_DISC);
+
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
 
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
@@ -147,7 +207,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DICE);
         simpleItem(ModItems.HEAL);
 
-        withExistingParent(ModItems.RHINO_SPANW_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+     //   withExistingParent(ModItems.RHINO_SPANW_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

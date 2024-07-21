@@ -1,2 +1,2 @@
-package net.oiariano.tutorialmod.util;public class AquacultureItemsUtil {
-}
+package net.oiariano.tutorialmod.util;
+

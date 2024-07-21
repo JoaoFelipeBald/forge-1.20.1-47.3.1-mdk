@@ -70,14 +70,22 @@ public class HealProjectile extends ThrowableItemProjectile {
             LivingEntity target = (LivingEntity) entity;
             if (entity.getType().getCategory().equals(MobCategory.CREATURE) || (entity instanceof Player) || entity.getType().getCategory().equals(MobCategory.MISC))
             {
-                target.heal(10f);
-                target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 400, 2));
+                target.heal(target.getMaxHealth()*amp/10);
+                if(this.amp>1&& this.amp<4) {
+                    target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
+                }
+                else if(this.amp>3 && this.amp<6){
+                    target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
+                }
 
+                else if(this.amp>5){
+                    target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 200, 2));
+                }
             }
 
         else{
-                target.hurt(target.damageSources().generic(), 10 * amp);
-                target.setSecondsOnFire(9);
+                target.hurt(target.damageSources().generic(), 8+amp*3);
+                target.setSecondsOnFire(5*this.amp);
             }
         }
 //        else if(target instanceof LivingEntity && entity.getType().getCategory().equals(MobCategory.MONSTER)) {

@@ -73,7 +73,7 @@ public class CustomProtectionEnchantment extends Enchantment {
                 return true;
             }
         }
-        return false;
+        return true;
     }
 
     /**

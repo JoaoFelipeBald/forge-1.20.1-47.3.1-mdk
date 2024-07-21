@@ -21,7 +21,7 @@ public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
             double currentHealth = target1.getHealth();
             double maxHealth = target1.getMaxHealth();
             double healthRatio = currentHealth / maxHealth;
-            double killChance = (1 - healthRatio) * 0.25 * pLevel;
+            double killChance = (1 - healthRatio) * 0.25 * Math.pow(pLevel,2);
 
             if (pAttacker.getRandom().nextDouble() < killChance) {
                 target1.kill();
@@ -34,7 +34,7 @@ public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
 
 @Override
 public int getMaxLevel() {
-    return 999;
+    return 5;
 }
     public boolean isAllowedOnBooks() {
         return true;

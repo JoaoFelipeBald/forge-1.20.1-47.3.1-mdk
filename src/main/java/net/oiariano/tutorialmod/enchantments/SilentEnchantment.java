@@ -11,7 +11,7 @@ public class SilentEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 999;
+        return 1;
     }
     public boolean isAllowedOnBooks() {
         return true;

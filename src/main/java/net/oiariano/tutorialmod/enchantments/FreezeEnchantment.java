@@ -13,23 +13,24 @@ public class FreezeEnchantment extends Enchantment{
             super(pRarity, pCategory, pApplicableSlots);
 }
 
-@Override
-public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
+    @Override
+    public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
     if (!pAttacker.level().isClientSide()) {
         LivingEntity target = (LivingEntity) pTarget;
-        int duration = 40 + (20 * pLevel);
+        int duration = (500 * pLevel);
         int amplifier = pLevel;
         target.addEffect(new MobEffectInstance(ModEffects.FREEZE.get(), duration, amplifier));
 
         super.doPostAttack(pAttacker, pTarget, pLevel);
+     }
     }
 
-}
 
-@Override
-public int getMaxLevel() {
-    return 999;
-}
+
+    @Override
+    public int getMaxLevel() {
+    return 10;
+    }
     public boolean isAllowedOnBooks() {
         return true;
     }

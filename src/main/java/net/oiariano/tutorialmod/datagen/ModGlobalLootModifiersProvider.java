@@ -55,7 +55,8 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 "chests/village/village_temple",
                 "chests/village/village_cartographer",
                 "chests/village/village_savanna_house",
-                "chests/village/village_mason"
+                "chests/village/village_mason",
+                "chests/desert_pyramid"
         );
 
         List<Item> itemsToAdd = Arrays.asList(
@@ -69,13 +70,16 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 ModItems.AMULETO_MANI.get(),
                 ModItems.CALICE_SIGEL.get(),
                 ModItems.RELOGIO_MANI.get()
+       //         ModItems.MIRACULA.get()
         );
 
         for (int i = 0; i < itemsToAdd.size(); i++) {
             Item item = itemsToAdd.get(i);
-            int chance = i/2;
+            int chance = (int) Math.floor((i/2+1)*1.5);
+      //      if (item==ModItems.MIRACULA.get()){chance=1;}
+
             for (String chest : chestLootTables) {
-                addItemToChest(chest, item, chance+1);
+                addItemToChest(chest, item, chance);
             }
         }
     }

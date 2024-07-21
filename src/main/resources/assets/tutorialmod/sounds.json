@@ -42,5 +42,414 @@
         "stream": true
       }
     ]
+  },
+  "raluquei": {
+    "sounds": [
+      {
+        "name": "tutorialmod:raluquei",
+        "stream": true
+      }
+    ]
+  },
+  "skibidi": {
+    "sounds": [
+      {
+        "name": "tutorialmod:skibidi",
+        "stream": true
+      }
+    ]
+  },
+  "mercy": {
+    "sounds": [
+      {
+        "name": "tutorialmod:mercy",
+        "stream": true
+      }
+    ]
+  },
+  "praca": {
+    "sounds": [
+      {
+        "name": "tutorialmod:praca",
+        "stream": true
+      }
+    ]
+  },
+    "evidencias": {
+    "sounds": [
+      {
+        "name": "tutorialmod:evidencias",
+        "stream": true
+      }
+    ]
+  },
+    "recomecar": {
+    "sounds": [
+      {
+        "name": "tutorialmod:recomecar",
+        "stream": true
+      }
+    ]
+  },
+    "lembrar": {
+    "sounds": [
+      {
+        "name": "tutorialmod:lembrar",
+        "stream": true
+      }
+    ]
+  },
+    "estranha": {
+    "sounds": [
+      {
+        "name": "tutorialmod:estranha",
+        "stream": true
+      }
+    ]
+  },
+    "comigo": {
+    "sounds": [
+      {
+        "name": "tutorialmod:comigo",
+        "stream": true
+      }
+    ]
+  },
+    "vagalumes": {
+    "sounds": [
+      {
+        "name": "tutorialmod:vagalumes",
+        "stream": true
+      }
+    ]
+  },
+    "ela": {
+    "sounds": [
+      {
+        "name": "tutorialmod:ela",
+        "stream": true
+      }
+    ]
+  },
+    "garrafa": {
+    "sounds": [
+      {
+        "name": "tutorialmod:garrafa",
+        "stream": true
+      }
+    ]
+  },
+  "borboletas": {
+    "sounds": [
+      {
+        "name": "tutorialmod:borboletas",
+        "stream": true
+      }
+    ]
+  },
+    "durou": {
+    "sounds": [
+      {
+        "name": "tutorialmod:durou",
+        "stream": true
+      }
+    ]
+  },
+  "tracer": {
+    "sounds": [
+      {
+        "name": "tutorialmod:tracer",
+        "stream": true
+      }
+    ]
+  },
+    "dela": {
+    "sounds": [
+      {
+        "name": "tutorialmod:dela",
+        "stream": true
+      }
+    ]
+  },
+    "boa": {
+    "sounds": [
+      {
+        "name": "tutorialmod:boa",
+        "stream": true
+      }
+    ]
+  },
+    "graca": {
+    "sounds": [
+      {
+        "name": "tutorialmod:graca",
+        "stream": true
+      }
+    ]
+  },
+    "errada": {
+    "sounds": [
+      {
+        "name": "tutorialmod:errada",
+        "stream": true
+      }
+    ]
+  },
+    "negao": {
+    "sounds": [
+      {
+        "name": "tutorialmod:negao",
+        "stream": true
+      }
+    ]
+  },
+    "contrariar": {
+    "sounds": [
+      {
+        "name": "tutorialmod:contrariar",
+        "stream": true
+      }
+    ]
+  },
+    "saudade": {
+    "sounds": [
+      {
+        "name": "tutorialmod:saudade",
+        "stream": true
+      }
+    ]
+  },
+    "barata": {
+    "sounds": [
+      {
+        "name": "tutorialmod:barata",
+        "stream": true
+      }
+    ]
+  },
+    "pescador": {
+    "sounds": [
+      {
+        "name": "tutorialmod:pescador",
+        "stream": true
+      }
+    ]
+  },
+  "ben10": {
+    "sounds": [
+      {
+        "name": "tutorialmod:ben10",
+        "stream": true
+      }
+    ]
+  },
+  "mim": {
+    "sounds": [
+      {
+        "name": "tutorialmod:mim",
+        "stream": true
+      }
+    ]
+  },
+    "ligacao": {
+    "sounds": [
+      {
+        "name": "tutorialmod:ligacao",
+        "stream": true
+      }
+    ]
+  },
+    "frente": {
+    "sounds": [
+      {
+        "name": "tutorialmod:frente",
+        "stream": true
+      }
+    ]
+  },
+    "normal": {
+    "sounds": [
+      {
+        "name": "tutorialmod:normal",
+        "stream": true
+      }
+    ]
+  },
+    "rezo": {
+    "sounds": [
+      {
+        "name": "tutorialmod:rezo",
+        "stream": true
+      }
+    ]
+  },
+    "estiver": {
+    "sounds": [
+      {
+        "name": "tutorialmod:estiver",
+        "stream": true
+      }
+    ]
+  },
+    "tarde": {
+    "sounds": [
+      {
+        "name": "tutorialmod:tarde",
+        "stream": true
+      }
+    ]
+  },
+    "emocoes": {
+    "sounds": [
+      {
+        "name": "tutorialmod:emocoes",
+        "stream": true
+      }
+    ]
+  },
+    "abriu": {
+    "sounds": [
+      {
+        "name": "tutorialmod:abriu",
+        "stream": true
+      }
+    ]
+  },
+    "nightmare": {
+    "sounds": [
+      {
+        "name": "tutorialmod:nightmare",
+        "stream": true
+      }
+    ]
+  },
+    "afterlife": {
+    "sounds": [
+      {
+        "name": "tutorialmod:afterlife",
+        "stream": true
+      }
+    ]
+  },
+    "god": {
+    "sounds": [
+      {
+        "name": "tutorialmod:god",
+        "stream": true
+      }
+    ]
+  },
+    "heaven": {
+    "sounds": [
+      {
+        "name": "tutorialmod:heaven",
+        "stream": true
+      }
+    ]
+  },
+    "away": {
+    "sounds": [
+      {
+        "name": "tutorialmod:away",
+        "stream": true
+      }
+    ]
+  },
+    "space": {
+    "sounds": [
+      {
+        "name": "tutorialmod:space",
+        "stream": true
+      }
+    ]
+  },
+    "roar": {
+    "sounds": [
+      {
+        "name": "tutorialmod:roar",
+        "stream": true
+      }
+    ]
+  },
+    "horse": {
+    "sounds": [
+      {
+        "name": "tutorialmod:horse",
+        "stream": true
+      }
+    ]
+  },
+    "chandelier": {
+    "sounds": [
+      {
+        "name": "tutorialmod:chandelier",
+        "stream": true
+      }
+    ]
+  },
+    "years": {
+    "sounds": [
+      {
+        "name": "tutorialmod:years",
+        "stream": true
+      }
+    ]
+  },
+    "bass": {
+    "sounds": [
+      {
+        "name": "tutorialmod:bass",
+        "stream": true
+      }
+    ]
+  },
+    "maybe": {
+    "sounds": [
+      {
+        "name": "tutorialmod:maybe",
+        "stream": true
+      }
+    ]
+  },
+    "blood": {
+    "sounds": [
+      {
+        "name": "tutorialmod:blood",
+        "stream": true
+      }
+    ]
+  },
+    "cyclone": {
+    "sounds": [
+      {
+        "name": "tutorialmod:cyclone",
+        "stream": true
+      }
+    ]
+  },
+    "love": {
+    "sounds": [
+      {
+        "name": "tutorialmod:love",
+        "stream": true
+      }
+    ]
+  },
+    "fly": {
+    "sounds": [
+      {
+        "name": "tutorialmod:fly",
+        "stream": true
+      }
+    ]
+  },
+  "girl": {
+    "sounds": [
+      {
+        "name": "tutorialmod:girl",
+        "stream": true
+      }
+    ]
   }
+
 }

@@ -6,7 +6,7 @@
       "loot_table_id": "minecraft:chests/pillager_outpost"
     },
     {
-      "chance": 0.25,
+      "chance": 0.16666667,
       "condition": "minecraft:random_chance"
     }
   ],

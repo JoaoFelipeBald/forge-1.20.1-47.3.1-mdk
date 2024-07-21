@@ -12,6 +12,7 @@
   "item.tutorialmod.sapphire_shovel": "Sapphire Shovel",
   "item.tutorialmod.sapphire_pickaxe": "Sapphire Pickaxe",
 
+  "item.tutorialmod.dinheiro_peixe": "Token do Peixe",
   "item.tutorialmod.dinheiro_sigel": "Dinheiro Sigel",
   "item.tutorialmod.pote_sigel": "Pote Sigel",
   "item.tutorialmod.amuleto_sigel": "Amuleto Solar",
@@ -21,12 +22,14 @@
 
   "item.tutorialmod.healer_staff1": "Cajado do Aprendiz",
   "item.tutorialmod.healer_staff2": "Cajado do Patriarca",
-  "item.tutorialmod.healer_staff3": "Cajado do Sumo Sacerdote",
+  "item.tutorialmod.healer_staff3": "Cajado do Sacerdote",
   "item.tutorialmod.healer_staff4": "Cajado do Cardeal",
   "item.tutorialmod.healer_staff5": "Cajado Primaz (inativo)",
   "item.tutorialmod.healer_staff6": "Cajado Primaz",
 
   "item.tutorialmod.fragmento_sigel": "Fragmento de Armadura Sigel",
+  "item.tutorialmod.suprimentodoferreiro": "Suprimentos de Forja",
+
   "item.tutorialmod.upgrade_sigel": "Cristal Sigel",
   "item.tutorialmod.elmo_mineiro": "Elmo do Minerador",
 
@@ -67,19 +70,177 @@
   "item.tutorialmod.estelaris": "Estelaris",
   "item.tutorialmod.miracula": "Miracula",
   "item.tutorialmod.corviva": "Corviva",
+  "item.tutorialmod.energy": "Lata de Monster",
+  "item.tutorialmod.pamonha": "Pamonha",
   "item.tutorialmod.accel": "Accel",
 
   "item.tutorialmod.acell_seeds": "Sementes de Accel",
   "item.tutorialmod.dinami_seeds": "Sementes de Dinami",
   "item.tutorialmod.estelaris_seeds": "Sementes de Estelaris",
   "item.tutorialmod.miracula_seeds": "Sementes de Miracula",
-  "item.tutorialmod.corviva_seeds": "Sementes de corviva",
+  "item.tutorialmod.corviva_seeds": "Sementes de Corviva",
 
 
   "block.tutorialmod.catmint": "Catmint",
 
   "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.tutorialmod.raluquei_music_disc": "Raluquei",
+  "item.tutorialmod.raluquei_music_disc.desc": "Obra de arte de Jean L",
+
+  "item.tutorialmod.skibidi_music_disc": "Skibidi Toilet",
+  "item.tutorialmod.skibidi_music_disc.desc": "NIB NIB",
+
+  "item.tutorialmod.tracer_music_disc": "Pense como a tracer",
+  "item.tutorialmod.tracer_music_disc.desc": "COM SEU CORAÇÃOOOO",
+
+  "item.tutorialmod.mercy_music_disc": "No mercy",
+  "item.tutorialmod.mercy_music_disc.desc": "I'M ALREADY TRACER",
+
+  "item.tutorialmod.praca_music_disc": "Dormi na praça",
+  "item.tutorialmod.praca_music_disc.desc": "SEU GUARDA EU NÃO SOU VAGABUNDO",
+
+    "item.tutorialmod.evidencias_music_disc": "Evidencias",
+  "item.tutorialmod.evidencias_music_disc.desc": "PENSANDO NELAAA",
+
+    "item.tutorialmod.recomecar_music_disc": "Recomecar",
+  "item.tutorialmod.recomecar_music_disc.desc": "Restart :D",
+
+    "item.tutorialmod.lembrar_music_disc": "Pra você lembrar",
+  "item.tutorialmod.lembrar_music_disc.desc": "Lembrei",
+
+    "item.tutorialmod.estranha_music_disc": "Menina estranha",
+  "item.tutorialmod.estranha_music_disc.desc": "Egirls",
+
+    "item.tutorialmod.comigo_music_disc": "Levo comigo",
+  "item.tutorialmod.comigo_music_disc.desc": "E EU VOU TE ESPERAAAAARRR",
+
+    "item.tutorialmod.vagalumes_music_disc": "Vagalumes",
+  "item.tutorialmod.vagalumes_music_disc.desc": "MAIS DE UM MILHÃOO",
+
+    "item.tutorialmod.ela_music_disc": "Ela",
+  "item.tutorialmod.ela_music_disc.desc": "Ele",
+
+    "item.tutorialmod.borboletas_music_disc": "Borboletas",
+  "item.tutorialmod.borboletas_music_disc.desc": "MAS NADA ESTÁ IGUAAALL",
+
+    "item.tutorialmod.garrafa_music_disc": "Cerveja de garrafa",
+  "item.tutorialmod.garrafa_music_disc.desc": "E TODA VEZ QUE EU RELAXO",
+
+  "item.tutorialmod.durou_music_disc": "Até que durou",
+  "item.tutorialmod.durou_music_disc.desc": "FUI MAIS UM NAS SUAS MÃOOOSS",
+
+
+  "item.tutorialmod.dela_music_disc": "Lapada Dela",
+  "item.tutorialmod.dela_music_disc.desc": "ELA É QUEM TE PEGAAA",
+
+    "item.tutorialmod.boa_music_disc": "Vida boa",
+  "item.tutorialmod.boa_music_disc.desc": "OU OU OU",
+
+    "item.tutorialmod.graca_music_disc": "Nem de graça",
+  "item.tutorialmod.graca_music_disc.desc": "Nem de graçaaa",
+
+    "item.tutorialmod.errada_music_disc": "Me apaixonei pela pessoa errada",
+  "item.tutorialmod.errada_music_disc.desc": "ESTOU ENLOUQUECENDOOO",
+
+    "item.tutorialmod.negao_music_disc": "Lá vem o negão",
+  "item.tutorialmod.negao_music_disc.desc": "CHEIO DE PAIXÃO",
+
+    "item.tutorialmod.contrariar_music_disc": "Você virou saudade",
+  "item.tutorialmod.contrariar_music_disc.desc": "Só pra contrariar",
+
+    "item.tutorialmod.saudade_music_disc": "Você virou saudade",
+  "item.tutorialmod.saudade_music_disc.desc": "Com essa solidãooo",
+
+    "item.tutorialmod.barata_music_disc": "Barata da vizinha",
+  "item.tutorialmod.barata_music_disc.desc": "VOU DAR PAULADA NA BARATA DELA",
+
+    "item.tutorialmod.pescador_music_disc": "A vida de pescador",
+  "item.tutorialmod.pescador_music_disc.desc": "AII COMO É DIFÍCIL",
+
+    "item.tutorialmod.ben10_music_disc": "Ben10 intro",
+  "item.tutorialmod.ben10_music_disc.desc": "A história começou com um relógio esquisito",
+
+  "item.tutorialmod.mim_music_disc": "A Melhor Parte de Mim",
+  "item.tutorialmod.mim_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.ligacao_music_disc": "Ligação",
+  "item.tutorialmod.ligacao_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.frente_music_disc": "Daqui Pra Frente",
+  "item.tutorialmod.frente_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.normal_music_disc": "Não é Normal",
+  "item.tutorialmod.normal_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.rezo_music_disc": "Só Rezo",
+  "item.tutorialmod.rezo_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.estiver_music_disc": "Onde Estiver",
+  "item.tutorialmod.estiver_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.tarde_music_disc": "Cedo ou Tarde",
+  "item.tutorialmod.tarde_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.emocoes_music_disc": "Razões e Emoções",
+  "item.tutorialmod.emocoes_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.abriu_music_disc": "Hoje o Céu Abriu",
+  "item.tutorialmod.abriu_music_disc.desc": "NX Zero",
+
+  "item.tutorialmod.nightmare_music_disc": "Nightmare",
+  "item.tutorialmod.nightmare_music_disc.desc": "Avenged Sevenfold",
+
+  "item.tutorialmod.afterlife_music_disc": "Afterlife",
+  "item.tutorialmod.afterlife_music_disc.desc": "Avenged Sevenflod",
+
+  "item.tutorialmod.god_music_disc": "Dear God",
+  "item.tutorialmod.god_music_disc.desc": "Avenged Sevenflod",
+
+  "item.tutorialmod.heaven_music_disc": "A Little Piece of Heaven",
+  "item.tutorialmod.heaven_music_disc.desc": "Avenged Sevenflod",
+
+  "item.tutorialmod.away_music_disc": "So Far Away",
+  "item.tutorialmod.away_music_disc.desc": "Avenged Sevenflod",
+
+  "item.tutorialmod.space_music_disc": "Blank Space",
+  "item.tutorialmod.space_music_disc.desc": "Taylow Swift",
+
+  "item.tutorialmod.roar_music_disc": "Roar",
+  "item.tutorialmod.roar_music_disc.desc": "Katy Perry",
+
+  "item.tutorialmod.horse_music_disc": "Dark Horse",
+  "item.tutorialmod.horse_music_disc.desc": "Katy Perry",
+
+  "item.tutorialmod.chandelier_music_disc": "Chandelier",
+  "item.tutorialmod.chandelier_music_disc.desc": "Sia",
+
+  "item.tutorialmod.years_music_disc": "A Thousand Years",
+  "item.tutorialmod.years_music_disc.desc": "A Thoursand Years",
+
+  "item.tutorialmod.bass_music_disc": "All About That Bass",
+  "item.tutorialmod.bass_music_disc.desc": "Meghan Trainor",
+
+  "item.tutorialmod.maybe_music_disc": "Call Me Maybe",
+  "item.tutorialmod.maybe_music_disc.desc": "Carly Rae Jepsen",
+
+  "item.tutorialmod.blood_music_disc": "Bad Blood",
+  "item.tutorialmod.blood_music_disc.desc": "Taylor Swift",
+
+  "item.tutorialmod.cyclone_music_disc": "Cyclone",
+  "item.tutorialmod.cyclone_music_disc.desc": "Sticky Fingers",
+
+  "item.tutorialmod.love_music_disc": "Smokin' Love",
+  "item.tutorialmod.love_music_disc.desc": "Sticky Fingers",
+
+  "item.tutorialmod.fly_music_disc": "How To Fly",
+  "item.tutorialmod.fly_music_disc.desc": "Sticky Fingers",
+
+  "item.tutorialmod.girl_music_disc": "MTC-S3RL",
+  "item.tutorialmod.girl_music_disc.desc": "OH OH OH OH",
+
+
 
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
   "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
@@ -101,30 +262,89 @@
   "block.tutorialmod.sapphire_trapdoor": "Sapphire Trapdoor",
 
 
-  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables undergound!",
+  "tooltip.tutorialmod.metal_detector.tooltip": "",
   "tooltip.tutorialmod.sound_block.tooltip": "Sound",
 
-  "entity.minecraft.villager.tutorialmod.sigelferreiromaster": "Sound Master",
-  "entity.minecraft.villager.tutorialmod.sigelcolecionadormaster": "Scary Master",
-  "entity.minecraft.villager.tutorialmod.sigelarmeiromaster": "Good Master",
+  "entity.minecraft.villager.tutorialmod.sigelferreiromaster": "Descendente Sigel",
+  "entity.minecraft.villager.tutorialmod.sigelcolecionadormaster": "O colecionador",
+  "entity.minecraft.villager.tutorialmod.soundmaster": "Vendedor de discos",
+  "entity.minecraft.villager.tutorialmod.sigelarmeiromaster": "O Mago",
   "entity.minecraft.villager.tutorialmod.sigelprincipal": "Good Master",
 
-  "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
+  "entity.minecraft.villager.tutorialmod.soundmaster2": "Vendedor de discos",
+  "entity.minecraft.villager.tutorialmod.soundmaster3": "Vendedor de discos",
+
+  "creativetab.tutorial_tab": "Sigel e Mani",
   "effect.tutorialmod.freeze": "Freeze",
   "effect.tutorialmod.cooldown": "Cooldown",
-  "enchantment.tutorialmod.fall_protectio2": "Peso Pena",
+  "enchantment.tutorialmod.fall_protection_2": "Peso Pena Sigel",
+  "enchantment.tutorialmod.fall_protection_2.description": "Fale com o mago para mais informações",
   "enchantment.tutorialmod.freeze": "Congelamento",
-  "enchantment.tutorialmod.fire_protectio2": "Proteção do Fogo",
+  "enchantment.tutorialmod.fire_protection_2": "Proteção do Fogo Sigel",
+  "enchantment.tutorialmod.fire_protection_2.description": "Fale com o mago para mais informações",
+  "enchantment.tutorialmod.protection_2": "Proteção Sigel",
+  "enchantment.tutorialmod.protection_2.description": "Fale com o mago para mais informações",
+  "enchantment.tutorialmod.explosion_protection_2": "Proteção de Explosão Sigel",
+  "enchantment.tutorialmod.explosion_protection_2.description": "Fale com o mago para mais informações",
   "enchantment.tutorialmod.night_vision_enchantment": "Visão Mani",
+  "enchantment.tutorialmod.night_vision_enchantment.description": "Fale com o mago para mais informações",
   "enchantment.tutorialmod.poison_enchantment": "Víbora Escarlate",
-  "enchantment.tutorialmod.reaper_enchantment": "Julgamento",
-  "enchantment.tutorialmod.sacred_enchantment": "Chama de Mithra",
-  "enchantment.tutorialmod.projectile_protection_2": "Proteção de projéteis",
+  "enchantment.tutorialmod.poison_enchantment.description": "Fale com o mago para mais informações",
+  "enchantment.tutorialmod.reaper_enchantment": "Ceifeiro",
+  "enchantment.tutorialmod.sacred_enchantment": "Fale com o mago para mais informações",
+  "enchantment.tutorialmod.projectile_protection_2": "Proteção de projéteis Sigel",
+  "enchantment.tutorialmod.projectile_protection_2.description": "Fale com o mago para mais informações",
   "enchantment.tutorialmod.silent_enchantment": "Caçador Noturno",
+  "enchantment.tutorialmod.jump_enchantment": "Sopro de Njord",
+  "enchantment.tutorialmod.wither_enchantment": "Maldição de Hela",
+  "enchantment.tutorialmod.wither_enchantment.description": "Fale com o mago para mais informações",
 
-  "item.tutorialmod.fragmento_sigel.tooltip": "Resquícios da armadura de um Sigel.\nMuitos desaparecidos e poucos mortos, a \nprofissão do mensageiro era\n tão venerada quanto arriscada",
+  "item.tutorialmod.fragmento_sigel.tooltip": "Ainda emite leve calor, embora esteja\nesteja enfraquecido pelo tempo",
+  "item.tutorialmod.upgrade_sigel.tooltip": "Emite forte calor, pode restaurar\nequipamentos antigos",
+  "item.tutorialmod.custom_enchanted_book": "Antigo encantamento Sigel",
+  "item.tutorialmod.custom_enchanted_book2": "Antigo encantamento Mani",
 
-  "item.tutorialmod.sigel1_helmet.tooltip": "Resquícios da armadura de um Sigel.\nMuitos desaparecidos e poucos mortos, a \nprofissão do mensageiro era\n tão venerada quanto arriscada",
 
-  "enchantment.tutorialmod.cooldown": "Proteção de Gaia"
+  "item.tutorialmod.sigel1_chestplate.tooltip": "Pouco resquícios do seu poder antigo\no mensageiro foi uma profissão respeitada,\narriscada e esquecida.",
+  "item.tutorialmod.sigel2_chestplate.tooltip": "Um pouco de sua habilidade restaurada\nPoucos Sigel sobreviveram ao pacto,\ntodos os mensageiros em missão\ndesapareceram.",
+  "item.tutorialmod.sigel3_chestplate.tooltip": "Resquícios da armadura de um Sigel.\nMuitos desaparecidos e poucos mortos, a \nprofissão do mensageiro era\ntão venerada quanto arriscada.",
+  "item.tutorialmod.sigel4_chestplate.tooltip": "Resquícios da armadura de um Sigel.\nMuitos desaparecidos e poucos mortos, a \nprofissão do mensageiro era\ntão venerada quanto arriscada.",
+  "item.tutorialmod.mani_helmet.tooltip": "",
+
+  "item.tutorialmod.dinheiro_sigel.tooltip": "Moeda extinta pertencente a uma\ncivilização que idolatrava o sol, possui um\nbrilho vívido e intenso. Seu valor foi\nesquecido pelo tempo.",
+  "item.tutorialmod.pote_sigel.tooltip": "Pote de cerâmica utilizado para fermentação\nde corviva. Ainda é possível sentir\nseu súbito aroma.",
+  "item.tutorialmod.amuleto_sigel.tooltip": "Um antigo amuleto dos Sigel, emana uma\nsuave luz dourada. Representa a proteção e a\nvida concedidas pelo Sol.",
+  "item.tutorialmod.calice_sigel.tooltip": "Um cálice sagrado usado em rituais dos\nSigel, adornado com símbolos solares. Seu\nbrilho dourado reflete a devoção ao\nSol, canalizando sua energia para abençoar\ne proteger.",
+  "item.tutorialmod.pergaminho_sigel.tooltip": "Pergaminho ancestral adornado com orações\na Prometheus, a igreja adorava o Sol e temia\na noite, o preconceito contra os Mani era\nlugar comum em sua crença.",
+  "item.tutorialmod.mapa_sigel.tooltip": "Um mapa antigo e desgastado que representa\nas cidades de uma civilização perdida, alguns\nsímbolos parecem indicar cidades inimigas.",
+
+
+  "item.tutorialmod.dinheiro_mani.tooltip": "Moeda singular pertencente a uma\ncivilização que venerava a noite, emana uma\naura serena. Seu valor foi esquecido\npelo tempo.",
+  "item.tutorialmod.amuleto_mani.tooltip": "Um antigo amuleto Mani,\nemana uma suave luz\nprateada. Representava a sabedoria\ne calma concedidas pela Lua.",
+  "item.tutorialmod.relogio_mani.tooltip": "Arcaico relógio Mani,pode se sentir\no luar vindo dele. Um artefato precioso\nque só era acessível pela nobreza e\nfamília real.",
+  "item.tutorialmod.lanterna_mani.tooltip": "Uma lanterna ancestral dos Mani,\nemite um brilho etéreo que escurece o\nambiente ao redor. As sombras protegiam\nos Mani como a luz protege os Sigel.",
+  "item.tutorialmod.faca_mani.tooltip": "Faca cerimonial de obsidiana adornada\ncom símbolos lunares. Foi usada em\nesquecidos rituais sagrados, representa \naconexão espiritual e a proteção Lunar.",
+  "item.tutorialmod.jornal_mani.tooltip": "Restos de um jornal antigo, as\npoucas manchetes legíveis destacam\num conflito entre dois povos, a paz\nprecária tinha seus dias contados. ",
+  "item.tutorialmod.healer_staff1.tooltip": "Cajado da Igreja de Prometheus,\nna crença Sigel o mundo já foi\nenvolto em pura escuridão, onde a vida\nera marcada por dor e incerteza.",
+  "item.tutorialmod.healer_staff2.tooltip": "Prometheus sacrificou se em corpo\ne alma para trazer luz, sua dor\nalimenta o Sol ao fim de cada dia,\nseu sofrimento é eterno",
+  "item.tutorialmod.healer_staff3.tooltip": "Para a igreja, a própria existência\ndos Mani era uma forma de\nblasfêmia, o conflito entre os dois\npovos era constante.",
+  "item.tutorialmod.elmo_mineiro.tooltip": "",
+  "item.tutorialmod.heal": "Orbe da Cura",
+  "item.tutorialmod.dice": "Dado",
+
+  "item.tutorialmod.corviva.tooltip": "Fruto de cor sangue, seu consumo\nrecupera o corpo de injúrias leves,\nambos os povos acreditava que seu\npoder vinha do sagrado.",
+  "item.tutorialmod.estelaris.tooltip": " ",
+  "item.tutorialmod.miracula.tooltip": " ",
+  "item.tutorialmod.accel.tooltip": "Uma planta rara de regiões selvagens,\nseu consumo concede destreza\nera pensada como extinta até agora.",
+  "item.tutorialmod.dinamita.tooltip": "",
+  "item.tutorialmod.dinami.tooltip": "Milho duro como pedra, relatos dizem que\nguerreiros a consumiam para aumentar\nsua força, mas parece incomestível\nnesse estado.",
+  "item.tutorialmod.pirarucu": "Peixe Lendário Pirarucu",
+  "item.tutorialmod.pirarucu.tooltip": "O lendário peixe Pirarucu. Um ser\nancestral dos rios sagrados, diz se\nque comer de sua carne eleva o homem\ntemporariamente, abandonando sua\nmortalidade e se tornando um Deus",
+
+  "enchantment.tutorialmod.cooldown": "Cooldown",
+  "key.category.tutorialmod.tutorial": "Sigel e Mani",
+  "key.tutorialmod.activate_night_vision": "Ativar Night Vision",
+  "key.tutorialmod.activate_speed": "Ativar Poderes da Armadura",
+  "key.tutorialmod.change_plus_speed": "Aumentar velocidade",
+  "key.tutorialmod.change_minus_speed": "Diminuir velocidade"
 }

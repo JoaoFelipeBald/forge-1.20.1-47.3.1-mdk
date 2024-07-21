@@ -17,9 +17,10 @@ public class PoisonEnchantment extends Enchantment {
     public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
         if (!pAttacker.level().isClientSide()) {
             LivingEntity target = (LivingEntity) pTarget;
-            int duration = 40 + (20 * pLevel);
-            int amplifier = pLevel;
-            target.addEffect(new MobEffectInstance(MobEffects.POISON, duration, amplifier));
+            int durationPoison = 100 + (80 * pLevel);
+            int durationSlow = 100 + (80 * pLevel);
+            target.addEffect(new MobEffectInstance(MobEffects.POISON, durationPoison, pLevel+1));
+            target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, durationSlow, pLevel+3));
 
             super.doPostAttack(pAttacker, pTarget, pLevel);
         }
@@ -27,7 +28,7 @@ public class PoisonEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 999;
+        return 5;
     }
     public boolean isAllowedOnBooks() {
         return true;

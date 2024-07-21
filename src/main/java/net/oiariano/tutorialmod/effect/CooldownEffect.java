@@ -16,9 +16,10 @@ public class CooldownEffect extends MobEffect {
             = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<MobEffect> COOLDOWN = MOB_EFFECTS.register("cooldown",
-            () -> new FreezeEffect(MobEffectCategory.HARMFUL, 3124687));
+            () -> new FreezeEffect(MobEffectCategory.BENEFICIAL, 3124687));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }
+
 }

@@ -5,6 +5,14 @@
       "required": false
     },
     {
+      "id": "tutorialmod:sound_poi2",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:sound_poi3",
+      "required": false
+    },
+    {
       "id": "tutorialmod:sigelcolecionadorpoi",
       "required": false
     },

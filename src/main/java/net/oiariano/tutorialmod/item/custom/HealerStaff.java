@@ -49,7 +49,7 @@ public class HealerStaff extends Item {
                 ItemStack itemStack = player.getItemInHand(hand);
                 throwSnowball(level, player);
             // Damage the item
-                itemStack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(hand));
+                itemStack.hurtAndBreak(0, player, p -> p.broadcastBreakEvent(hand));
                 return InteractionResultHolder.success(itemStack);
             }
         }

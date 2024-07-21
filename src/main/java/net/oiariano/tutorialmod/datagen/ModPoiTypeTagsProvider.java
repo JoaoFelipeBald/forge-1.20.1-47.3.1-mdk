@@ -21,6 +21,10 @@ public class ModPoiTypeTagsProvider extends PoiTypeTagsProvider {
         tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(new ResourceLocation(TutorialMod.MOD_ID, "sound_poi"));
         tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
+                .addOptional(new ResourceLocation(TutorialMod.MOD_ID, "sound_poi2"));
+        tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
+                .addOptional(new ResourceLocation(TutorialMod.MOD_ID, "sound_poi3"));
+        tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(new ResourceLocation(TutorialMod.MOD_ID, "sigelcolecionadorpoi"));
         tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(new ResourceLocation(TutorialMod.MOD_ID, "sigelferreiropoi"));

@@ -2,6 +2,7 @@ package net.oiariano.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -17,10 +18,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.oiariano.tutorialmod.block.ModBlocks;
 import net.oiariano.tutorialmod.effect.ModEffects;
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.oiariano.tutorialmod.enchantments.ModEnchantments;
 import net.oiariano.tutorialmod.entity.ModEntities;
-import net.oiariano.tutorialmod.entity.client.RhinoRenderer;
 import net.oiariano.tutorialmod.event.PlayerTickHandler;
 import net.oiariano.tutorialmod.item.ModCreativeModTabs;
 import net.oiariano.tutorialmod.item.ModItems;
@@ -52,6 +51,7 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
         ModEffects.register(modEventBus);
 
+    //    MinecraftForge.EVENT_BUS.register(new PlayerEvents());
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new PlayerTickHandler());
         modEventBus.addListener(this::addCreative);
@@ -81,7 +81,7 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+           // EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
 
             EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
 
