@@ -2,9 +2,10 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"idle": {
+			"loop": true,
 			"animation_length": 1,
 			"bones": {
-				"cima": {
+				"bone": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -12,9 +13,6 @@
 						"1.0": {
 							"vector": [0, -120, 0]
 						}
-					},
-					"position": {
-						"vector": [0, 0, 0]
 					}
 				}
 			}

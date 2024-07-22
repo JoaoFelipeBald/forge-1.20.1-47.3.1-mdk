@@ -2,6 +2,7 @@ package net.oiariano.tutorialmod.item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -192,16 +193,16 @@ public class ModItems {
         }
     });
     public static final RegistryObject<Item> HEALER_STAFF4 = ITEMS.register("healer_staff4",
-            () -> new HealerStaff(new Item.Properties().durability(100),4));
+            () -> new HealerStaff(new Item.Properties(), 4));
 
     public static final RegistryObject<Item> HEALER_STAFF5 = ITEMS.register("healer_staff5",
-            () -> new HealerStaff(new Item.Properties().durability(100),5));
+            () -> new HealerStaff(new Item.Properties(),5));
 
     public static final RegistryObject<Item> HEALER_STAFF6 = ITEMS.register("healer_staff6",
-            () -> new HealerStaff(new Item.Properties().durability(100),6));
+            () -> new HealerStaff(new Item.Properties(),6));
 
     public static final RegistryObject<Item> MERCY_STAFF = ITEMS.register("mercy_staff",
-            () -> new MercyStaff(new Item.Properties()));
+            () -> new MercyStaff(new Item.Properties(), 0));
 
     public static final RegistryObject<Item> ACCEL= ITEMS.register("accel",
             () -> new Item(new Item.Properties().food(ModFoods.ACCEL)){
