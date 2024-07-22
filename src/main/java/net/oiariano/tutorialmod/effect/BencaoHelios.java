@@ -7,8 +7,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.oiariano.tutorialmod.TutorialMod;
 
-public class CooldownEffect extends MobEffect {
-    public CooldownEffect(MobEffectCategory mobEffectCategory, int color) {
+public class BencaoHelios extends MobEffect {
+    public BencaoHelios(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
     public static final DeferredRegister<MobEffect> MOB_EFFECTS
