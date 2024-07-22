@@ -4,6 +4,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -19,6 +20,7 @@ import net.oiariano.tutorialmod.enchantments.ModEnchantments;
 import net.oiariano.tutorialmod.item.ModItems;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
 @Mod.EventBusSubscriber(modid = "tutorialmod", value = Dist.CLIENT)
@@ -54,6 +56,26 @@ public class PlayerTickHandler {
             if(nivelSigel==0){
                 player.removeEffect(ModEffects.BENCAO_HELIOS.get());
             }
+            int level=0;
+            try {
+                if (world.isClientSide && player != null) {
+                    Collection<MobEffectInstance> efeitos = player.getActiveEffects();
+//                            player.sendSystemMessage(Component.literal(efeitos.toString()));
+                    for(MobEffectInstance efeito : efeitos){
+                        if(efeito.getEffect()==ModEffects.BENCAO_HELIOS.get()){
+                            level=efeito.getAmplifier();
+                        }
+                    }
+                }
+            } finally {
+            }
+ //           player.sendSystemMessage(Component.literal("level "+level));
+            if(level>0&&nivelSigel!=0) {
+                player.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.1f+0.04*level);
+                player.removeEffect(MobEffects.MOVEMENT_SPEED);
+            }
+
+
         }
         if (!world.isClientSide()) {
 
@@ -63,7 +85,7 @@ public class PlayerTickHandler {
 //                player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 0, false, false));
             //}
         } else if (Minecraft.getInstance().options.keyJump.isDown()) { // Only execute on the client side
-
+            int nivelSigel=verificarArmadura(player);
             boolean hasJumpEnchantment = EnchantmentHelper.getEnchantmentLevel(ModEnchantments.JUMP_ENCHANTMENT.get(), player) > 0;
             int jumpLevel = EnchantmentHelper.getEnchantmentLevel(ModEnchantments.JUMP_ENCHANTMENT.get(), player);
 
@@ -91,7 +113,7 @@ public class PlayerTickHandler {
                 }
 
                 jumps++;
-                if (jumps >= ((jumpLevel+1)/5)+2) {
+                if (jumps >= (nivelSigel)+2) {
                     canReallyDoubleJump = false;
                 }
             }
@@ -132,18 +154,12 @@ public class PlayerTickHandler {
             count2++;
             correto=0;
             for(Item armor: sigelAtual) {
-//                Minecraft.getInstance().player.sendSystemMessage(Component.literal("b"+armor.getDescriptionId()+"atual"+armorsPlayer.get(count%4).getDescriptionId()));
-                if (armorsPlayer.get(count%4) == armor) {
+              if (armorsPlayer.get(count%4) == armor) {
                     correto++;
-  //                  Minecraft.getInstance().player.sendSystemMessage(Component.literal("CORRETO"+correto));
-                }
+             }
                 count++;
-                //         Minecraft.getInstance().player.sendSystemMessage(Component.literal("Número de corretos"+String.valueOf(correto)));
-
-                //     if(correto==3){Minecraft.getInstance().player.sendSystemMessage(Component.literal("resultado"+String.valueOf(count2)));}
-            }
+                   }
             if(correto==4){
-//                Minecraft.getInstance().player.sendSystemMessage(Component.literal("DEU CERTO "+count2));
                 return count2;
             }
         }

@@ -2,7 +2,6 @@ package net.oiariano.tutorialmod.item.custom;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -16,7 +15,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.oiariano.tutorialmod.effect.ModEffects;
 import net.oiariano.tutorialmod.item.ModArmorMaterials;
 import net.oiariano.tutorialmod.item.ModItems;
 
@@ -27,23 +25,23 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, List<MobEffectInstance>>())
-                    .put(ModArmorMaterials.SAPPHIRE, ImmutableList.of(
-                            new MobEffectInstance(MobEffects.HEAL, 2000, 1, false, false, false),
-                            new MobEffectInstance(ModEffects.FREEZE.get(), 2000, 1, false, false, false),
-                            new MobEffectInstance(MobEffects.WATER_BREATHING, 2000, 1, false, false, false)
-                    ))
-                    .put(ModArmorMaterials.SIGEL1, ImmutableList.of(
-                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
-                    ))
-                    .put(ModArmorMaterials.SIGEL2, ImmutableList.of(
-                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
-                    ))
-                    .put(ModArmorMaterials.SIGEL3, ImmutableList.of(
-                            new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false, false)
-                    ))
-                    .put(ModArmorMaterials.SIGEL4, ImmutableList.of(
-                            new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false, false)
-                    ))
+//                    .put(ModArmorMaterials.SAPPHIRE, ImmutableList.of(
+//                            new MobEffectInstance(MobEffects.HEAL, 2000, 1, false, false, false),
+//                            new MobEffectInstance(ModEffects.FREEZE.get(), 2000, 1, false, false, false),
+//                            new MobEffectInstance(MobEffects.WATER_BREATHING, 2000, 1, false, false, false)
+//                    ))
+//                    .put(ModArmorMaterials.SIGEL1, ImmutableList.of(
+//                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
+//                    ))
+//                    .put(ModArmorMaterials.SIGEL2, ImmutableList.of(
+//                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
+//                    ))
+//                    .put(ModArmorMaterials.SIGEL3, ImmutableList.of(
+//                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
+//                    ))
+//                    .put(ModArmorMaterials.SIGEL4, ImmutableList.of(
+//                            new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false, false)
+//                    ))
                     .put(ModArmorMaterials.MANI, ImmutableList.of(
                             new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 15, false, false, false),
                             new MobEffectInstance(MobEffects.LUCK, 2000, 20, false, false, false),
@@ -67,6 +65,19 @@ public class ModArmorItem extends ArmorItem {
         if (hasFullSuitOfArmorOn(player)) {
             BlockPos blockPosBelow = player.blockPosition().below();
             BlockState blockStateBelow = world.getBlockState(blockPosBelow);
+//            int level = 0;
+//            try {
+//                if (world.isClientSide && player != null) {
+//                    Collection<MobEffectInstance> efeitos = player.getActiveEffects();
+////                            player.sendSystemMessage(Component.literal(efeitos.toString()));
+////                    for(MobEffectInstance efeito : efeitos){
+////                        if(efeito.getEffect()==ModEffects.BENCAO_HELIOS.get()){
+////                            level=efeito.getAmplifier();
+////                        }
+////                    }
+//                }
+//            } finally {
+//            }
 //            if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
 //                CompoundTag playerData = Minecraft.getInstance().player.getPersistentData();
 //                if(!playerData.contains("velocidade")){
@@ -95,16 +106,6 @@ public class ModArmorItem extends ArmorItem {
 ////            if(speed>this.max){speed=this.max;}
 //
          //   player.sendSystemMessage(Component.literal("d "+player.hasEffect(ModEffects.BENCAO_HELIOS.get())));
-            int level=0;
-            MobEffectInstance effectInstance = Minecraft.getInstance().player.getEffect(ModEffects.BENCAO_HELIOS.get());
-            if (effectInstance != null) {
-                level = effectInstance.getAmplifier();
-            } else {
-            }
-            player.sendSystemMessage(Component.literal("nivel " + level));
-            if(!player.hasEffect(MobEffects.MOVEMENT_SPEED)&&level>0){
-                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10,level));
-            }
             if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.SIGEL1_HELMET.get()) {
                 player.fallDistance = 0.0F;
 //                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, 8, false, false, false));
@@ -134,11 +135,12 @@ public class ModArmorItem extends ArmorItem {
                         player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     }
 //                    player.addEffect(new MobEffectInstance(MobEffects.WITHER, 300, 3));
-                    player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
+ //                   player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     player.setOnGround(true);
-                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, 8, false, false, false));
-                    player.setSprinting(true);
+//                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, 18, false, false, false));
+//                    player.setSprinting(true);
                 }
+//                else{player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, 10, false, false, false));}
             }
             else if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.SIGEL2_HELMET.get()) {
                 player.setMaxUpStep(1.1F);
@@ -165,68 +167,81 @@ public class ModArmorItem extends ArmorItem {
                     if(player.getDeltaMovement().y<0){
                         player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     }
-                    player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
+//                    player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     player.setOnGround(true);
-                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10, 8,false,false,false));
-                    player.setSprinting(true);
+//                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10, 18,false,false,false));
+//                    player.setSprinting(true);
                 }
+//                else{player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, level, false, false, false));}
+//                player.sendSystemMessage(Component.literal("a "+level));
             }
             else if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.SIGEL3_HELMET.get()) {
                 player.setMaxUpStep(2.2F);
                 player.fallDistance = 0.0F;
-//                try {
-//                    if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
-//                        int velocidade = Minecraft.getInstance().player.getPersistentData().getInt("velocidade");
-//                        if (velocidade < 0) {
-//                            Minecraft.getInstance().player.getPersistentData().putInt("velocidade", 0);
-//                        }
-//                        if (velocidade > this.maxin) {
-//                            Minecraft.getInstance().player.getPersistentData().putInt("velocidade", this.maxin);
-//                        }
-//                        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, velocidade));
-//                    }
-//                } finally {
-//
+
+//                if (!player.hasEffect(MobEffects.MOVEMENT_SPEED) && level > 0) {
+//                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, level));
 //                }
-//                try {
-//                    addEffect(player, speed);
-//                }
-//                finally {}
-                if ((blockStateBelow.getBlock() == Blocks.WATER|| blockStateBelow.getBlock() == Blocks.LAVA) && !player.isShiftKeyDown()) {
-                    if(player.getDeltaMovement().y<0){
-                        player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
-                    }
-                    player.setOnGround(true);
-                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10, 11,false,false,false));
-                    player.setSprinting(true);
-                }
-            }
-            else if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.SIGEL4_HELMET.get()) {
-                player.setMaxUpStep(3.3F);
-                player.fallDistance = 0.0F;
-//                try {
-//                    if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
-//                        int velocidade = Minecraft.getInstance().player.getPersistentData().getInt("velocidade");
-//                        if (velocidade < 0) {
-//                            Minecraft.getInstance().player.getPersistentData().putInt("velocidade", 0);
-//                        }
-//                        if (velocidade > this.maxin) {
-//                            Minecraft.getInstance().player.getPersistentData().putInt("velocidade", this.maxin);
-//                        }
-//                        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, velocidade));
-//                    }
-//                } finally {
-//
-//                }
+//                player.sendSystemMessage(Component.literal("a "+level));
+
 
                 if ((blockStateBelow.getBlock() == Blocks.WATER|| blockStateBelow.getBlock() == Blocks.LAVA) && !player.isShiftKeyDown()) {
                     if(player.getDeltaMovement().y<0){
                         player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
                     }
                     player.setOnGround(true);
-                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10, 17,false,false,false));
-                    player.setSprinting(true);
+//                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10, 18,false,false,false));
+//                    player.setSprinting(true);
                 }
+//                else{player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, level, false, false, false));}
+            }
+            else if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.SIGEL4_HELMET.get()) {
+                player.setMaxUpStep(3.3F);
+                player.fallDistance = 0.0F;
+  //              try {
+//                    if (!world.isClientSide) {
+//                        int level = 0;
+//                        MobEffectInstance effectInstance = Minecraft.getInstance().player.getEffect(ModEffects.BENCAO_HELIOS.get());
+//                        if (effectInstance != null) {
+//                            level = effectInstance.getAmplifier();
+//                        } else {
+//                        }
+//////            player.sendSystemMessage(Component.literal("nivel " + level));
+//                        if (!player.hasEffect(MobEffects.MOVEMENT_SPEED) && level > 0) {
+//                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, level));
+//                        }
+//                    }
+
+
+//                    }
+//                }
+//                finally {
+//
+//                }
+//                try {
+//                    if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
+//                        int velocidade = Minecraft.getInstance().player.getPersistentData().getInt("velocidade");
+//                        if (velocidade < 0) {
+//                            Minecraft.getInstance().player.getPersistentData().putInt("velocidade", 0);
+//                        }
+//                        if (velocidade > this.maxin) {
+//                            Minecraft.getInstance().player.getPersistentData().putInt("velocidade", this.maxin);
+//                        }
+//                        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, velocidade));
+//                    }
+//                } finally {
+//
+
+
+                if ((blockStateBelow.getBlock() == Blocks.WATER|| blockStateBelow.getBlock() == Blocks.LAVA) && !player.isShiftKeyDown()) {
+                    if(player.getDeltaMovement().y<0){
+                        player.setDeltaMovement(player.getDeltaMovement().multiply(1, 0, 1));
+                    }
+                    player.setOnGround(true);
+//                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,10, 18,false,false,false));
+//                    player.setSprinting(true);
+                }
+//                else{player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, level, false, false, false));}
             }
             else {
                 player.setMaxUpStep(0.6F);
@@ -238,8 +253,8 @@ public class ModArmorItem extends ArmorItem {
                     player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 400, 10));
                 }
                 if(hasFullSuitOfArmorOn(player)) {
-                    evaluateArmorEffects(player);
-//                    addEffect(player);
+ //                   evaluateArmorEffects(player);
+//                    addEffect(player, level);
                 }
 //                try {
 //                    addEffect(player, speed);
@@ -263,16 +278,16 @@ public class ModArmorItem extends ArmorItem {
         }
     }
 
-    private void addEffect(Player player){
-        if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
-            Player p1 = Minecraft.getInstance().player;
-            if (p1.hasEffect(ModEffects.BENCAO_HELIOS.get())&&!p1.hasEffect(MobEffects.WITHER)) {
-                p1.addEffect(new MobEffectInstance(MobEffects.WITHER, 300, 10));
-//                p1.sendSystemMessage(Component.literal("a"));
-            }
-//        p1.sendSystemMessage(Component.literal(String.valueOf(player.hasEffect(MobEffects.MOVEMENT_SPEED))));
-        }
-    }
+//    private void addEffect(Player player){
+//        if (Minecraft.getInstance() != null && Minecraft.getInstance().player != null) {
+//            Player p1 = Minecraft.getInstance().player;
+//            if (p1.hasEffect(ModEffects.BENCAO_HELIOS.get())&&!p1.hasEffect(MobEffects.WITHER)) {
+//                p1.addEffect(new MobEffectInstance(MobEffects.WITHER, 300, 10));
+////                p1.sendSystemMessage(Component.literal("a"));
+//            }
+////        p1.sendSystemMessage(Component.literal(String.valueOf(player.hasEffect(MobEffects.MOVEMENT_SPEED))));
+//        }
+//    }
 
     private void addStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial, MobEffectInstance mapStatusEffect) {
         boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());
@@ -315,4 +330,8 @@ public class ModArmorItem extends ArmorItem {
         return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
+//    @OnlyIn(Dist.CLIENT)
+//    private MobEffectInstance getEffect(Player player) {
+//        return player.getEffect(ModEffects.BENCAO_HELIOS.get());
+//    }
 }
