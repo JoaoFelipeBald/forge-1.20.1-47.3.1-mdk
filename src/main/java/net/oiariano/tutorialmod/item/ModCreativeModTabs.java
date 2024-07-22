@@ -89,6 +89,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.HEALER_STAFF3.get());
                         pOutput.accept(ModItems.HEALER_STAFF4.get());
                         pOutput.accept(ModItems.HEALER_STAFF5.get());
+                        pOutput.accept(ModItems.MERCY_STAFF.get());
 
                         pOutput.accept(ModItems.PERGAMINHO_SIGEL.get());
                         pOutput.accept(ModItems.POTE_SIGEL.get());

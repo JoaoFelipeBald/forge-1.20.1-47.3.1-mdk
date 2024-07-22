@@ -56,7 +56,7 @@ public class HealerStaff extends Item {
         return InteractionResultHolder.pass(player.getItemInHand(hand));
     }
 
-    private void throwSnowball(Level level, Player player) {
+    protected void throwSnowball(Level level, Player player) {
         HealProjectile healProjectile = new HealProjectile(level, player, amp);
        healProjectile.setItem(new ItemStack(ModItems.HEAL.get()));  // Defina o item como uma bola de neve
 
