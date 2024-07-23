@@ -20,7 +20,7 @@ import net.minecraft.world.phys.HitResult;
 
 public class HealProjectile extends ThrowableItemProjectile {
     int amp;
-    public HealProjectile(EntityType<? extends net.minecraft.world.entity.projectile.Snowball> pEntityType, Level pLevel) {
+    public HealProjectile(EntityType pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.setGlowingTag(true);
 
@@ -29,6 +29,14 @@ public class HealProjectile extends ThrowableItemProjectile {
     public HealProjectile(Level pLevel, LivingEntity pShooter, int level) {
         super(EntityType.SNOWBALL, pShooter, pLevel);
         this.setSecondsOnFire(10);
+        this.amp=level;
+    }
+
+    public HealProjectile(EntityType entityType, Level pLevel, LivingEntity pShooter, int level) {
+        super(entityType, pShooter, pLevel);
+        this.setSecondsOnFire(10);
+        this.setInvisible(true);
+        this.setGlowingTag(true);
         this.amp=level;
     }
 
@@ -41,7 +49,7 @@ public class HealProjectile extends ThrowableItemProjectile {
         return Items.SNOWBALL;
     }
 
-    private ParticleOptions getParticle() {
+    public ParticleOptions getParticle() {
         ItemStack itemstack = this.getItemRaw();
         return (ParticleOptions)(itemstack.isEmpty() ? ParticleTypes.FLASH : new ItemParticleOption(ParticleTypes.ITEM, itemstack));
     }
@@ -68,7 +76,7 @@ public class HealProjectile extends ThrowableItemProjectile {
         Entity entity = pResult.getEntity();
         if(entity instanceof LivingEntity) {
             LivingEntity target = (LivingEntity) entity;
-            if (entity.getType().getCategory().equals(MobCategory.CREATURE) || (entity instanceof Player) || entity.getType().getCategory().equals(MobCategory.MISC))
+            if (entity.getType().getCategory().equals(MobCategory.CREATURE) || (entity instanceof Player) || entity.getType().getCategory().equals(MobCategory.MISC) || entity.getType().getCategory().equals(MobCategory.AXOLOTLS) || entity.getType().getCategory().equals(MobCategory.WATER_AMBIENT) || entity.getType().getCategory().equals(MobCategory.WATER_CREATURE))
             {
                 target.heal(target.getMaxHealth()*amp/10);
                 if(this.amp>1&& this.amp<4) {

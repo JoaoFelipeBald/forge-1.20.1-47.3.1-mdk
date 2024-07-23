@@ -1,5 +1,6 @@
 # eclipse
 bin
+run-data/logs
 *.launch
 .settings
 .metadata
