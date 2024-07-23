@@ -74,6 +74,9 @@ public class PlayerTickHandler {
                 player.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.1f+0.04*level);
                 player.removeEffect(MobEffects.MOVEMENT_SPEED);
             }
+//            player.getAttribute(Attributes.LUCK).setBaseValue(2);
+ //           player.sendSystemMessage(Component.literal("a"+player.getAttribute(Attributes.LUCK).getBaseValue()));
+
 
 
         }
