@@ -139,6 +139,8 @@ public class ModCreativeModTabs {
                                 new EnchantmentInstance(ModEnchantments.NIGHT_VISION_ENCHANTMENT.get(), 1), Rarity.RARE);
                         ItemStack reaper = CustomEnchantedBookItem.createForEnchantment(
                                 new EnchantmentInstance(ModEnchantments.REAPER_ENCHANTMENT.get(), 1), Rarity.RARE);
+                        ItemStack passar = CustomEnchantedBookItem.createForEnchantment(
+                                new EnchantmentInstance(ModEnchantments.PASSAR_ENCHANTMENT.get(), 1), Rarity.RARE);
 
                   //      Prot5.getOrCreateTag().putInt("CustomRarity", Enchantment.Rarity.RARE.ordinal());
                  //       FProt4.getOrCreateTag().putInt("CustomRarity", Enchantment.Rarity.RARE.ordinal());
@@ -151,6 +153,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(poison);
                         pOutput.accept(night);
                         pOutput.accept(reaper);
+                        pOutput.accept(passar);
 
 
                         pOutput.accept(ModItems.PINE_CONE.get());

@@ -72,6 +72,10 @@ public class ModEnchantments {
             ENCHANTMENTS.register("jump_enchantment",
                     () -> new JumpEnchantment(Enchantment.Rarity.RARE,
                             EnchantmentCategory.ARMOR, EquipmentSlot.FEET));
+    public static RegistryObject<Enchantment> PASSAR_ENCHANTMENT =
+            ENCHANTMENTS.register("passar_enchantment",
+                    () -> new PassarEnchantment(Enchantment.Rarity.RARE,
+                            EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
 
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
