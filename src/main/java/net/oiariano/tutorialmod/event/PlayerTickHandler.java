@@ -55,7 +55,7 @@ public class PlayerTickHandler {
 
                 if (currentMainHandItem.getItem() instanceof MercyStaff && ((animationPlayer != null && animationPlayer.getCurrentTick() > 35) || !(previousMainHandItem.getItem() instanceof MercyStaff))) {
                     animationPlayer = new KeyframeAnimationPlayer(animation);
-                    animationStack.addAnimLayer(0, animationPlayer);
+                    animationStack.addAnimLayer(3, animationPlayer);
                 } else if (!(currentMainHandItem.getItem() instanceof MercyStaff) && (previousMainHandItem.getItem() instanceof MercyStaff)){
                     animationPlayer.stop();
                 }
