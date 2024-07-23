@@ -1,7 +1,15 @@
 package net.oiariano.tutorialmod.event;
 
+import dev.kosmx.playerAnim.api.AnimUtils;
+import dev.kosmx.playerAnim.api.layered.*;
+import dev.kosmx.playerAnim.core.data.KeyframeAnimation;
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -15,9 +23,11 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.oiariano.tutorialmod.TutorialMod;
 import net.oiariano.tutorialmod.effect.ModEffects;
 import net.oiariano.tutorialmod.enchantments.ModEnchantments;
 import net.oiariano.tutorialmod.item.ModItems;
+import net.oiariano.tutorialmod.item.custom.MercyStaff;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -28,12 +38,30 @@ public class PlayerTickHandler {
     private static int jumps = 0;
     private static boolean canReallyDoubleJump = true;
     private static boolean wasReallyJumping = false;
+    private static ItemStack previousMainHandItem = ItemStack.EMPTY;
+    static KeyframeAnimationPlayer animationPlayer = null;
 
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         Player player = event.player;
         Level world = player.level();
+
         if (world.isClientSide()){
+            AnimationStack animationStack = PlayerAnimationAccess.getPlayerAnimLayer((AbstractClientPlayer) player);
+
+            if (event.phase == TickEvent.Phase.END) {
+                ItemStack currentMainHandItem = player.getMainHandItem();
+                KeyframeAnimation animation = PlayerAnimationRegistry.getAnimation(new ResourceLocation(TutorialMod.MOD_ID, "mercy"));
+
+                if (currentMainHandItem.getItem() instanceof MercyStaff && ((animationPlayer != null && animationPlayer.getCurrentTick() > 35) || !(previousMainHandItem.getItem() instanceof MercyStaff))) {
+                    animationPlayer = new KeyframeAnimationPlayer(animation);
+                    animationStack.addAnimLayer(3, animationPlayer);
+                } else if (!(currentMainHandItem.getItem() instanceof MercyStaff) && (previousMainHandItem.getItem() instanceof MercyStaff)){
+                    animationPlayer.stop();
+                }
+
+                previousMainHandItem = currentMainHandItem;
+            }
             boolean hasNightEnchantment = EnchantmentHelper.getEnchantmentLevel(ModEnchantments.NIGHT_VISION_ENCHANTMENT.get(), player) > 0;
             Boolean isNight = Minecraft.getInstance().player.getPersistentData().getBoolean("night_active");
             if (hasNightEnchantment) {

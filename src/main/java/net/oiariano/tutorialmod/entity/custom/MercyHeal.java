@@ -87,6 +87,7 @@ public class MercyHeal extends HealProjectile {
         if(entity instanceof LivingEntity) {
             LivingEntity target = (LivingEntity) entity;
             target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 50, 2));
+            target.addEffect(new MobEffectInstance(MobEffects.GLOWING, 50, 0));
         }
     }
 

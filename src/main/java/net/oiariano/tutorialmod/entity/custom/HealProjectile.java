@@ -35,8 +35,6 @@ public class HealProjectile extends ThrowableItemProjectile {
     public HealProjectile(EntityType entityType, Level pLevel, LivingEntity pShooter, int level) {
         super(entityType, pShooter, pLevel);
         this.setSecondsOnFire(10);
-        this.setInvisible(true);
-        this.setGlowingTag(true);
         this.amp=level;
     }
 
